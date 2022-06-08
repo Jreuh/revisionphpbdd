@@ -4,17 +4,17 @@
 <form action="index.php" method="POST" enctype="multipart/form-data">
 
     <label>Prenom</label>
-    <input type="text" name="firstname">
+    <input type="text" name="first_name">
     <label>Nom de de famille</label>
-    <input type="text" name="lastname">
+    <input type="text" name="last_name">
     <label>Alias</label>
-    <input type="text" name="Alias">
+    <input type="text" name="alias">
     <label>Talent</label>
     <input type="text" name="talent">
     <label>Jour de naissance</label>
-    <input type="number" min="1" max="31" name="dayofbirth">
+    <input type="number" min="1" max="31" name="day_birth">
     <label>Mois de naissance</label>
-    <select name="monthofbirth" id="">
+    <select name="month_birth" id="">
         <option value="">Choisissez un mois</option>
         <option value="january">Janvier</option>
         <option value="febuary">Fevrier</option>
