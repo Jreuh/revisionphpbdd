@@ -14,20 +14,21 @@
     <label>Jour de naissance</label>
     <input type="number" min="1" max="31" name="dayofbirth">
     <label>Mois de naissance</label>
-    <select name="monthofbirth" id=""></select>
-    <option value="">Choisissez un mois</option>
-    <option value="january">Janvier</option>
-    <option value="febuary">Fevrier</option>
-    <option value="march">Mars</option>
-    <option value="april">Avril</option>
-    <option value="may">Mai</option>
-    <option value="june">Juin</option>
-    <option value="july">Juillet</option>
-    <option value="august">Aout</option>
-    <option value="september">Septembre</option>
-    <option value="october">Octobre</option>
-    <option value="november">Novembre</option>
-    <option value="december">Décembre</option>
+    <select name="monthofbirth" id="">
+        <option value="">Choisissez un mois</option>
+        <option value="january">Janvier</option>
+        <option value="febuary">Fevrier</option>
+        <option value="march">Mars</option>
+        <option value="april">Avril</option>
+        <option value="may">Mai</option>
+        <option value="june">Juin</option>
+        <option value="july">Juillet</option>
+        <option value="august">Aout</option>
+        <option value="september">Septembre</option>
+        <option value="october">Octobre</option>
+        <option value="november">Novembre</option>
+        <option value="december">Décembre</option>
+    </select>
 
 
     <label>Image</label>
