@@ -36,4 +36,14 @@ function create(){
     ($first_name,$last_name,$alias, $talent, $day_birth,$month_birth, $image)";
     $query= $db->prepare($sql);
     $query->execute();    
+
+function updateChild($id)
+{
+    $pseudo = htmlspecialchars(ucfirst($_POST['pseudo']));
+
+    $db = dbConnect();
+    $sql = "UPDATE child SET pseudo = $pseudo WHERE id=$id";
+    $modif = $db -> prepare($sql);
+    $modif -> execute();
+
 }
