@@ -8,7 +8,7 @@ if (isset($_GET['action'])){
     if ($_GET['action'] == 'addChampion'){
         addChampion();
     }
-    if ($_GET['action'] == 'updateChampion'){
+    if ($_GET['action'] == 'upChampion'){
         update();
     }
 }

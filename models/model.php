@@ -22,3 +22,9 @@ function read()
     $perso = $query->fetchAll();
     return $perso;
 }
+
+function update()
+{
+    $db = dbConnect();
+    
+}
