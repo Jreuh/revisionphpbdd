@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,9 +17,7 @@
             <div id="champion"></div>
         </div>
         <div class="text-center">
-            <h1>Mes supers champions!</h1>
-            <p>Introduction</p>
-            <button onclick="myWorld();">Play/Pause</button>
+            <h1>South Park</h1>
             <a href="index.php?action=listChampion"><button>Liste de champions</button></a>
             <a href="index.php?action=addChampion"><button>Ajoute un champion</button></a>
             <a href="index.php?action=upChampion"><button>Modifie un champion</button></a>

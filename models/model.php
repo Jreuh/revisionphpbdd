@@ -1,17 +1,24 @@
 <?php
 
-function dbConnect(){
+function dbConnect()
+{
 
-    try{
+    try {
         $db = new PDO(
-            'mysql:host=localhost;dbname=crud;charset=UTF8',
+            'mysql:host=localhost;dbname=south park;charset=UTF8',
             'root',
             ''
         );
         return $db;
-    }
-    catch(Exception $e){
-        die ("Error: " . $e->getMessage());   
+    } catch (Exception $e) {
+        die("Error: " . $e->getMessage());
     }
 }
-
+function read()
+{
+    $db = dbConnect();
+    $sql = "SELECT * from child";
+    $query = $db->prepare($sql);
+    $perso = $query->fetchAll();
+    return $perso;
+}
