@@ -3,7 +3,7 @@ require ('models/model.php');
 
 function listChampion(){
     
-    $champion = getChampions();
+    
     require 'view/readView.php';
 }
 
