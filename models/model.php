@@ -21,12 +21,16 @@ function read()
     $query = $db->prepare($sql);
     $query->execute();
     $perso = $query->fetchAll();
-    var_dump($perso);
     return $perso;
 }
 
-function update()
+function updateChild($id)
 {
+    $pseudo = htmlspecialchars(ucfirst($_POST['pseudo']));
+
     $db = dbConnect();
-    
+    $sql = "UPDATE child SET pseudo = $pseudo WHERE id=$id";
+    $modif = $db -> prepare($sql);
+    $modif -> execute();
+
 }

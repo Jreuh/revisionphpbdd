@@ -7,7 +7,7 @@
 
 <form action="index.php" method="POST" enctype="multipart/form-data">
     <div class="container-fluid">
-    <div class="collumn col-8">
+    <div class="collumn col-6">
         <div class="form-group">
             <label>Prenom</label>
             <input type="text" class="form-control" name="first_name">
@@ -52,7 +52,7 @@
             <input type="file" name="imageForm">
         </div>
         </br>
-        <button type="submit" name="submit">Envoyer</button>
+        <button type="submit" name="update">Envoyer</button>
     </div>
     </div>
 </form>

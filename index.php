@@ -34,19 +34,12 @@ if (isset($_POST['submit'])) {
 }
 
 if (isset($_POST['update'])) {
-
-    if (!empty($_POST['championForm']) && $_FILES['imageForm'] && $_FILES['imageForm']['error'] == 0 && $_FILES['imageForm']['size'] <= 1000000) {
-        $file = pathinfo($_FILES['imageForm']['name']);
-        $extension = $file['extension'];
-        $extensionAccept = ['jpg', 'jpeg', 'png'];
-
-        if (in_array($extension, $extensionAccept)) {
-            // updateChampion();
-            echo 'Champion modifié';
-        } else {
-            echo 'jpg,jpeg,png Uniquement';
-        }
-    } else {
-        echo 'Image trop lourde et/ou non envoyée </br> Et/ou modifie un nom de champion';
+    if (!empty($_POST['first_name']) && !empty($_POST['first_name']) && !empty($_POST['alias']) && !empty($_POST['talent']) 
+    && !empty($_POST['day_birth']) && !empty($_POST['month_birth'])) {
+        $id = strip_tags($_GET['id']);
+        updateChild($id);
+    }
+    else{
+        echo 'Y manque un truc bro';
     }
 }
