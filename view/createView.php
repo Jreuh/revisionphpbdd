@@ -1,4 +1,4 @@
-<?php $title = 'Champion' ?>
+<?php $title = 'Personnage' ?>
 <?php ob_start(); ?>
 
 <form action="index.php" method="POST" enctype="multipart/form-data">
@@ -29,8 +29,6 @@
         <option value="november">Novembre</option>
         <option value="december">Décembre</option>
     </select>
-
-
     <label>Image</label>
     <input type="file" name="imageForm">
     </br>
