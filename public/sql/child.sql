@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost
--- Généré le : mer. 08 juin 2022 à 08:10
+-- Généré le : mer. 08 juin 2022 à 08:56
 -- Version du serveur : 5.7.33
 -- Version de PHP : 7.4.19
 
@@ -35,7 +35,7 @@ CREATE TABLE `child` (
   `talent` varchar(128) NOT NULL,
   `day_birth` int(11) NOT NULL,
   `month_birth` varchar(16) NOT NULL,
-  `image` varchar(128) NOT NULL
+  `image` varchar(128) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -43,7 +43,12 @@ CREATE TABLE `child` (
 --
 
 INSERT INTO `child` (`id`, `last_name`, `first_name`, `alias`, `talent`, `day_birth`, `month_birth`, `image`) VALUES
-(1, 'Cartman', 'Eric', 'Grand Wizard King', 'Manipulation and Leadership Ability', 1, 'july', '');
+(1, 'Cartman', 'Eric', 'Grand Wizard King', 'Manipulation and Leadership Ability', 1, 'july', ''),
+(2, 'Broflovski', 'Kyle', 'High Jew Elf King', 'Knowledge of the Universe', 26, 'may', NULL),
+(3, 'Stotch', 'Leopold', 'Paladin Butters', 'Intelligence and Memory', 11, 'september', NULL),
+(4, 'McCormick', 'Kenneth', 'Princess Kenny', 'Weaponry', 22, 'march', NULL),
+(5, 'Marsh', 'Stanley', 'Ranger Stan Marshwalker', 'Music', 19, 'octobre', NULL),
+(6, 'Donovan', 'Clyde', 'Warrior Clyde', 'Music', 10, 'april', NULL);
 
 --
 -- Index pour les tables déchargées
@@ -63,7 +68,7 @@ ALTER TABLE `child`
 -- AUTO_INCREMENT pour la table `child`
 --
 ALTER TABLE `child`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
