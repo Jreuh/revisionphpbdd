@@ -1,0 +1,64 @@
+Probleme:
+Il y a des commentaires de code
+Le code est en français. 
+Tout est dans un seul fichier. On y mélange des opérations en PHP
+__
+
+Il est modulaire : généralement découpé en de nombreux fichiers, chaque fichier a un et un seul rôle à la fois.
+
+Il est découplé : les fichiers sont conçus pour fonctionner indépendamment les uns des autres.
+
+Il est documenté : la documentation prend généralement la forme de commentaires spéciaux placés au-dessus des méthodes et classes publiques, pouvant être réutilisées dans d'autres projets (renseignez-vous sur la PHPdoc). On peut générer automatiquement une page web de documentation à partir de ces commentaires.
+
+Il est en anglais : c'est la langue des développeurs et développeuses partout sur la planète. Les variables et les noms des fonctions sont en anglais et peuvent être compris par tous.
+
+Il est clair : chaque fichier est généralement assez court (jamais des fichiers de 1000 lignes !), et le code à l'intérieur peut se lire comme de la prose.
+Modèle : cette partie gère les données de votre site. Son rôle est d'aller récupérer les informations « brutes » dans la base de données, de les organiser et de les assembler pour qu'elles puissent ensuite être traitées par le contrôleur. On y trouve donc entre autres les requêtes SQL.
+
+Vue : cette partie se concentre sur l'affichage. Elle ne fait presque aucun calcul et se contente de récupérer des variables pour savoir ce qu'elle doit afficher. On y trouve essentiellement du code HTML mais aussi quelques boucles et conditions PHP très simples, pour afficher par exemple une liste de messages.
+
+Contrôleur : cette partie gère la logique du code qui prend des décisions. C'est en quelque sorte l'intermédiaire entre le modèle et la vue : le contrôleur va demander au modèle les données, les analyser, prendre des décisions et renvoyer le texte à afficher à la vue. Le contrôleur contient exclusivement du PHP. C'est notamment lui qui détermine si le visiteur a le droit de voir la page ou non (gestion des droits d'accès).
+
+
+index.php : le contrôleur (chef d'orchestre)
+
+indexView.php : la vue (page HTML...)
+
+model.php : le modèle (requêtes SQL...)
+
+L'anglais
+
+La balise de fermeture PHP
+
+L'utilisation de short open tags
+
+L'indentation
+
+
+
+
+
+
+
+__
+IMG
+
+//image =>
+//$_FILES['imageForm']['error'] == 0  Aucune erreur / le téléchargement est correct
+//$_FILES['imageForm']['size']  Taille du fichier envoyé / Taille en octet
+
+//verifie si la valeur $extension existe dans le tableau $extensionAccept 
+
+
+// pathinfo($_FILES['imageForm']['name']) echo $path_parts['dirname'], "\n";
+// array (size=4)
+//   'dirname' => string '.' (length=1)
+//   'basename' => string 'rick.png' (length=8)
+//   'extension' => string 'png' (length=3)
+//   'filename' => string 'rick' (length=4)
+
+
+//move_uploaded_file(,) => déplace le fichier téléchargé 
+//$_FILES['imageForm']['tmp_name'] => dossier temporaire de l'image
+// requête sql 
+*
